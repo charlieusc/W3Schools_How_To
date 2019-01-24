@@ -6,9 +6,12 @@ body {
 	width: 100%;
 	height: 50px;
 	background: lightblue;
-	border-width: 0;
+	border: none;
+	outline: none;
 	text-align: left;
 	padding-left: 15px;
+	transition: all 0.3s ease;
+	cursor: pointer;
 }
 
 .active, .accordion:hover {
@@ -16,5 +19,21 @@ body {
 }
 
 .panel {
-	display: none;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background: white;
+	padding: 0 15px;
+}
+
+.accordion::after {
+	content: '\02795';
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-right: 5px;
+}
+
+.active::after {
+	content: '\02796';
 }
