@@ -1,3 +1,37 @@
 body {
-	background: lightgrey;
+}
+
+.normal {
+	width: 35px;
+	height: 5px;
+	margin: 6px 0px;
+	background: black;
+}
+
+.animated {
+	transition: 0.4s;
+}
+
+#menu_icon {
+	margin: 10px;
+	float: left;
+}
+
+#menu_icon_animated {
+	margin: 10px;
+	float: left;
+}
+
+.change #bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #bar2 {
+	opacity: 0;
+}
+
+.change #bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
 }
