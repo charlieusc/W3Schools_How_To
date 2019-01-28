@@ -1,0 +1,50 @@
+body {
+}
+
+.tabBtn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	text-align: left;
+	padding-left: 10px;
+	background: inherit;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+div button:hover  {
+	background: lightgray;
+}
+
+.tab {
+	float: left;
+	display: inline-block;
+	width: 30%;
+	height: 100%;
+	background: rgb(230,230,230);
+	border-right: 1px solid gray;
+}
+
+.container {
+	overflow: auto;
+	width: 500px;
+	height: 300px;
+	border: 1px solid gray;
+}
+
+.tabcontent {
+	padding: 10px;
+	float: left;
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+div button.select {
+	background: gray;
+}
