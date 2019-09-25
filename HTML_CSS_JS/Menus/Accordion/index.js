@@ -1,6 +1,4 @@
-const btns = document.getElementsByClassName("accordion");
-
-btnClick = (e) => {
+const btnClick = function(e) {
 	e.target.classList.toggle("active");
 	const panel = e.target.nextElementSibling;
 	if (panel.style.maxHeight) {
@@ -10,7 +8,15 @@ btnClick = (e) => {
 	}
 }
 
+const btns = document.getElementsByClassName("accordion");
+
+Array.from(btns).forEach( btn => {
+	btn.addEventListener('click', btnClick);
+})
+
+/*
 for (let i=0; i<btns.length; i++) {
 	const btn = btns[i];
 	btn.addEventListener('click', btnClick);
 }
+*/
