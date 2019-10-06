@@ -1,6 +1,6 @@
 const btnClick = function(e) {
-	e.target.classList.toggle("active");
-	const panel = e.target.nextElementSibling;
+	e.currentTarget.classList.toggle("active");
+	const panel = e.currentTarget.nextElementSibling;
 	if (panel.style.maxHeight) {
 		panel.style.maxHeight = null;
 	} else {
