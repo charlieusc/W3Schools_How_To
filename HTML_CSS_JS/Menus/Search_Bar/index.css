@@ -1,0 +1,41 @@
+#container {
+    background-color: #F1F1F1;
+    overflow: auto;
+    width: 500px;
+}
+a {
+    float: left;
+    padding: 14px 20px;
+    display: flex;
+    margin: auto;
+}
+a:hover {
+    background: grey;
+}
+
+a.active {
+    background-color: skyblue;
+}
+
+form {
+    float: right;
+    padding: 5px;
+    font-size: 25px;
+    overflow: none;
+    margin-top: 2px;
+}
+
+input {
+    float:left;
+    border: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+button {
+    float:left;
+    border: none;
+    margin: 0px;
+    padding: 10px;
+    background-color: darkgray;
+}
